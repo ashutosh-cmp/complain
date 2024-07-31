@@ -2,7 +2,7 @@
 
 ``` bash
 # clone the repo
-$ git clone https://github.com/Code-Genie-Technologies-Private-Limited/project.exam.git
+$ git clone https://github.com/9984a/complain.git
 
 # go into app's directory
 $ cd project.exam
