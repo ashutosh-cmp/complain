@@ -5,7 +5,7 @@
 $ git clone https://github.com/9984a/complain.git
 
 # go into app's directory
-$ cd project.exam
+$ cd complain
 
 # create a branch of your name(praveen/shivam/ashutosh/kuldeep/ved/kuldeep)
 $ git checkout -b praveen
