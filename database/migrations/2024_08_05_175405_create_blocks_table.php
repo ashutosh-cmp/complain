@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('blocks', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('state_id')->constrained('states')->restrictOnDelete();
+            
             $table->foreignId('district_id')->constrained('districts')->restrictOnDelete();
             $table->string('name');
             $table->string('short_name');

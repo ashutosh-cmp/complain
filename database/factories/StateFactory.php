@@ -18,6 +18,7 @@ class StateFactory extends Factory
     {
         return [
             'name' => $this->faker->sentence,
+            'short_name' => $this->faker->sentence,
         ];
     }
 }

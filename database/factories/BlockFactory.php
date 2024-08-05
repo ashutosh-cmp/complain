@@ -19,7 +19,6 @@ class BlockFactory extends Factory
     public function definition(): array
     {
         return [
-            'state_id' => State::query()->inRandomOrder()->value('id'),
             'district_id' => District::query()->inRandomOrder()->value('id'),
             'name' => $this->faker->sentence,
             'short_name' => $this->faker->sentence,

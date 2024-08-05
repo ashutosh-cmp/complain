@@ -18,8 +18,9 @@ class DistrictFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->sentence,
             'state_id' => State::query()->inRandomOrder()->value('id'),
+            'name' => $this->faker->sentence,
+            'short_name' => $this->faker->sentence,
         ];
     }
 }
