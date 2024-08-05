@@ -13,6 +13,6 @@ class BlockSeeder extends Seeder
      */
     public function run(): void
     {
-        Block::factory()->count(11)->create();
+        Block::factory()->count(6)->create();
     }
 }

@@ -17,10 +17,24 @@ class DistrictFactory extends Factory
      */
     public function definition(): array
     {
+        $district = [
+            'Deoria' => 'Deo',
+            'Gorakhpur' => 'Gkp',
+            'Lucknow' => 'Lko'
+        ];
+
+        static $index = 0;
+        $keys = array_keys($district);
+        $name = $keys[$index];
+        $short_name = $district[$name];
+
+        $index = ($index + 1) % count($keys);
+
         return [
-            'state_id' => State::query()->inRandomOrder()->value('id'),
-            'name' => $this->faker->sentence,
-            'short_name' => $this->faker->sentence,
+            'state_id' => '1',
+            'name' => $name,
+            'short_name' => $short_name,
         ];
     }
+
 }

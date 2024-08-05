@@ -18,11 +18,19 @@ class BlockFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            'district_id' => District::query()->inRandomOrder()->value('id'),
-            'name' => $this->faker->sentence,
-            'short_name' => $this->faker->sentence,
-            
+        static $count = 0;
+        $data = [
+            ['name' => 'Bhatparrani', 'district_id' => 1, 'short_name' => 'brp'],
+            ['name' => 'Deoria Sadar', 'district_id' => 1, 'short_name' => 'Deo'],
+            ['name' => 'Gola', 'district_id' => 2, 'short_name' => 'Gola'],
+            ['name' => 'Gagaha', 'district_id' => 2, 'short_name' => 'Gagaha'],
+            ['name' => 'Mall', 'district_id' => 3, 'short_name' => 'Mall'],
+            ['name' => 'Malihabad', 'district_id' => 3, 'short_name' => 'Malihabad'],
         ];
+
+        $rowdata = $data[$count];
+        $count = ($count + 1) % count($data);
+
+        return $rowdata;
     }
 }

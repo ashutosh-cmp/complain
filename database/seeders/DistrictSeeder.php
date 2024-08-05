@@ -13,6 +13,6 @@ class DistrictSeeder extends Seeder
      */
     public function run(): void
     {
-        District::factory()->count(11)->create();
+        District::factory()->count(3)->create();
     }
 }

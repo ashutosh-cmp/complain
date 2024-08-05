@@ -17,8 +17,8 @@ class StateFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->sentence,
-            'short_name' => $this->faker->sentence,
+            'name' => 'Uttar Pradesh',
+            'short_name' => 'up'
         ];
     }
 }
