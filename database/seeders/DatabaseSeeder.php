@@ -36,6 +36,7 @@ class DatabaseSeeder extends Seeder
             SubjectSeeder::class,
             TopicSeeder::class,
             StateSeeder::class,
+            DistrictSeeder::class,
         ]);
     }
 }
