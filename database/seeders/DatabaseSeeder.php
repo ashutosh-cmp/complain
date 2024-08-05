@@ -35,6 +35,7 @@ class DatabaseSeeder extends Seeder
             EmailSeeder::class,
             SubjectSeeder::class,
             TopicSeeder::class,
+            StateSeeder::class,
         ]);
     }
 }
