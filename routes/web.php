@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\SubjectController;
 
 // Apply the 'auth' middleware to routes that require authentication
@@ -25,6 +26,10 @@ Route::group(['middleware' => ['get.menu']], function () {
             Route::resource('topics', 'TopicController');
             Route::get('/subjects/{id}/download-pdf', [SubjectController::class, 'downloadPDF'])->name('subjects.downloadPDF');
             Route::get('/subjects/{id}/download-html', [SubjectController::class, 'downloadHTML'])->name('subjects.downloadHTML');
+
+            Route::resource('departments', 'DepartmentController');
+
+
 
             Route::prefix('menu/element')->group(function () {
                 Route::get('/', 'MenuElementController@index')->name('menu.index');
