@@ -35,6 +35,10 @@ class DatabaseSeeder extends Seeder
             EmailSeeder::class,
             SubjectSeeder::class,
             TopicSeeder::class,
+            StateSeeder::class,
+            DistrictSeeder::class,
+            BlockSeeder::class,
+            DepartmentSeeder::class,
         ]);
     }
 }
