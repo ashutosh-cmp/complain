@@ -38,6 +38,7 @@ class DatabaseSeeder extends Seeder
             StateSeeder::class,
             DistrictSeeder::class,
             BlockSeeder::class,
+            DepartmentSeeder::class,
         ]);
     }
 }
