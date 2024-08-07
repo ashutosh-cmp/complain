@@ -39,6 +39,7 @@ class DatabaseSeeder extends Seeder
             DistrictSeeder::class,
             BlockSeeder::class,
             DepartmentSeeder::class,
+            SubDepartmentSeeder::class,
         ]);
     }
 }

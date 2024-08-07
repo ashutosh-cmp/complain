@@ -24,6 +24,7 @@ Route::group(['middleware' => ['get.menu']], function () {
             Route::get('/roles/move/move-down', 'RolesController@moveDown')->name('roles.down');
             Route::resource('subjects', 'SubjectController');
             Route::resource('topics', 'TopicController');
+            Route::resource('subDepartments', 'SubDepartmentController');
             Route::get('/subjects/{id}/download-pdf', [SubjectController::class, 'downloadPDF'])->name('subjects.downloadPDF');
             Route::get('/subjects/{id}/download-html', [SubjectController::class, 'downloadHTML'])->name('subjects.downloadHTML');
 
