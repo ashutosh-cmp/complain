@@ -130,17 +130,17 @@ class MenusTableSeeder extends Seeder
         $this->beginDropdown('admin', 'Complain Management', 'cil-calculator');
         $this->insertLink('admin', 'Subject', '/subjects');
         $this->insertLink('admin', 'Topic', '/topics');
+        $this->insertLink('admin', 'Department', '/departments');
+        $this->insertLink('admin', 'Sub-Department', '/subdepartments');
+        $this->endDropdown();
+        $this->beginDropdown('admin', 'System Administration', 'cil-calculator');
+        $this->insertLink('admin', 'Edit menu',               '/menu/menu');
+        $this->insertLink('admin', 'Edit menu elements',      '/menu/element');
+        $this->insertLink('admin', 'Edit roles',              '/roles');
+        $this->endDropdown();
+        $this->beginDropdown('admin', 'Master', 'cil-calculator');
+        $this->insertLink('admin', 'Department', '/departments');
         $this->insertLink('admin', 'Sub-Department', '/subDepartments');
-        $this->endDropdown();
-        $this->beginDropdown('admin', 'System Administration', 'cil-calculator');
-        $this->insertLink('admin', 'Edit menu',               '/menu/menu');
-        $this->insertLink('admin', 'Edit menu elements',      '/menu/element');
-        $this->insertLink('admin', 'Edit roles',              '/roles');
-        $this->endDropdown();
-        $this->beginDropdown('admin', 'System Administration', 'cil-calculator');
-        $this->insertLink('admin', 'Edit menu',               '/menu/menu');
-        $this->insertLink('admin', 'Edit menu elements',      '/menu/element');
-        $this->insertLink('admin', 'Edit roles',              '/roles');
         $this->endDropdown();
 
         $this->joinAllByTransaction(); ///   <===== Must by use on end of this seeder
